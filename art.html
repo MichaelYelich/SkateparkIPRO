@@ -25,14 +25,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page3.html">Rental</a>
+              <a class="nav-link" href="rental.html">Rental</a>
+            </li>
+			<li class="nav-item active">
+              <a class="nav-link" href="#">Art <span class="sr-only">(current)</span></a>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -72,11 +78,41 @@
       </div>
         <div class="row featurette">
           <div class="col-md-7">
-            <p class="lead">Above is some of the recent artwork submitted to the park. If you want your artwork featured submit it using the link below<p>
-		  	<a class="nav-link">Submit Artwork</a>
+            <p class="lead">Above is some of the recent artwork submitted to the park. If you want your artwork featured submit it using the form below<p>
 		  </div>
         </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
 
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+          </form>
+        </div>
+      </div>
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
